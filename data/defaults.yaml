@@ -1,0 +1,9 @@
+---
+zrepl::config_dir: '/etc/zrepl'
+zrepl::config_name: 'zrepl.yml'
+zrepl::config_owner: root
+zrepl::config_group: wheel
+zrepl::config_mode: '0640'
+zrepl::bin_dir: /usr/local/bin
+zrepl::cfg_verify_cmd: configcheck --file
+zrepl::init_style: 'none'

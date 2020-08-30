@@ -1,0 +1,11 @@
+<% require 'yaml' -%>
+<% global = scope.lookupvar('zrepl::global') -%>
+<% jobs = scope.lookupvar('zrepl::jobs') -%>
+<% full_config = {
+  'global'=>global,
+  'jobs'=>jobs,
+}
+ -%>
+<%=
+full_config.to_yaml()
+ -%>
