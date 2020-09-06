@@ -5,5 +5,11 @@ zrepl::config_owner: root
 zrepl::config_group: wheel
 zrepl::config_mode: '0640'
 zrepl::bin_dir: /usr/local/bin
-zrepl::cfg_verify_cmd: configcheck --file
+zrepl::cfg_verify_cmd: configcheck --config
 zrepl::init_style: 'none'
+zrepl::manage_service: true
+zrepl::service_name: 'zrepl'
+zrepl::package_name: 'zrepl'
+zrepl::service_enable: true
+zrepl::service_ensure: 'running'
+zrepl::restart_on_change: true
